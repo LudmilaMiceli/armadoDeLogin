@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+  <p>Welcome to <%= title %>
+  </p>
+
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputName">Ingrese su nombre</label>
+        <input type="name" class="form-control" id="inputName" placeholder="Nombre" name="inputName" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputColor">Color</label>
+        <select id="inputColor" class="form-control" name = "inputColor" required>
+          <option selected>Elige un color</option>
+          <option>Azul</option>
+          <option>Verde</option>
+          <option>Amarillo</option>
+          <option>Rojo</option>
+          <option>Naranja</option>
+          <option>Violeta</option>
+        </select>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputEmai">Ingrese su email</label>
+        <input type="email" class="form-control" id="inputEmai" placeholder="Email" name="inputEmai" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputEdad">Edad</label>
+        <input type="number" class="form-control" id="inputEdad" placeholder="Edad" name="inputEdad" required>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+
+
+</body>
+
 </html>
